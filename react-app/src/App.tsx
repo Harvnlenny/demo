@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Component } from 'react';
 import { BrowserRouter as Router, NavLink, Redirect, Route } from 'react-router-dom';
 import './App.css';
+import Products from './components/Products';
 
 import axios from 'axios';
 import { Field, Form, Formik, FormikActions } from 'formik';
@@ -92,7 +93,7 @@ class App extends Component<any, any> {
           />
           <Route path="/products" exact render={
             () => {
-              return ( <h1>Products</h1>);
+              return (<Products></Products>);
             }
           }
           />
